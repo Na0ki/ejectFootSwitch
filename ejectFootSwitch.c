@@ -29,10 +29,13 @@ int main(int argc,char *argv[]){
  
         case CDS_NO_DISC:
             printf("NO_DISCn");
-            POINT pt;
-            GetCursorPos(&pt);
-            mouse_event(MOUSEEVENTF_LEFTDOWN,0,0,0,0);
-            mouse_event(MOUSEEVENTF_LEFTUP,0,0,0,0);
+            
+            /* write what you want to do */
+            char *ls = "ls -al"
+            printf("whatever you want to do\n")
+            system(ls);
+            /* example ends here */
+            
             char *eject = "eject";
             printf("uiiiin\n");
             system(eject);
