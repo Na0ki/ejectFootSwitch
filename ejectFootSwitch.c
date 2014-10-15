@@ -29,6 +29,10 @@ int main(int argc,char *argv[]){
  
         case CDS_NO_DISC:
             printf("NO_DISCn");
+            POINT pt;
+            GetCursorPos(&pt);
+            mouse_event(MOUSEEVENTF_LEFTDOWN,0,0,0,0);
+            mouse_event(MOUSEEVENTF_LEFTUP,0,0,0,0);
             char *eject = "eject";
             printf("uiiiin\n");
             system(eject);
