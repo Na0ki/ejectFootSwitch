@@ -32,7 +32,7 @@ int main(int argc,char *argv[]){
             
             /* write what you want to do */
             char *ls = "ls -al"
-            printf("whatever you want to do\n")
+            printf("whatever you want to do\n");
             system(ls);
             /* example ends here */
             
