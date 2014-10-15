@@ -31,7 +31,7 @@ int main(int argc,char *argv[]){
             printf("NO_DISCn");
             
             /* write what you want to do */
-            char *ls = "ls -al"
+            char *ls = "ls -al";
             printf("whatever you want to do\n");
             system(ls);
             /* example ends here */
