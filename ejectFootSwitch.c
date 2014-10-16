@@ -13,7 +13,7 @@ int main(int argc,char *argv[]){
     int fd, result, slot;
     
     if(argc != 2){
-        printf("ERROR!n");
+        printf("ERROR!\n");
         return(-1);
     }
     
