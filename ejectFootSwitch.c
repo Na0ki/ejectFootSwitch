@@ -30,10 +30,17 @@ int main(int argc,char *argv[]){
         case CDS_NO_DISC:
             printf("NO_DISCn");
             
-            /* write what you want to do */
-            char *ls = "ls -al";
-            printf("whatever you want to do\n");
-            system(ls);
+            /* write whatever you want to do */
+            char *bootmikutter = "ruby mikutter";
+            char *checkmikutter = "pgrep -f mikutter";
+            char *killmikutter = "pgrep -f 'mikutter' | xargs kill";
+            if(system(checkmikutter) == 0){
+             system(bootmikutter);
+            }
+            else
+            {
+             system(killmikutter);
+            }
             /* example ends here */
             
             char *eject = "eject";
