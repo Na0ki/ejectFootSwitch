@@ -9,4 +9,10 @@ CDROMドライブのトレイをOn/Offスイッチ(フットスイッチ)にし�
 
 現在できるのはプロセスを起動またはkillのどちらか
 将来的には起動とkillを交互にできるようにしたい
-(☝ ՞ਊ ՞)☝
+
+### 使い方
+ejectFootSwitch.cのアプリケーション名をお好きなものに変更
+gccとかでejectFootSwitch.cをコンパイル
+ejectFootSwitch.shに./a.outを無限ループするように書いてあるので後は
+sh ejectFootSwitch.shを実行するのみ
+Have a nice uiiiin(☝ ՞ਊ ՞)☝
