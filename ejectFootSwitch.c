@@ -31,17 +31,23 @@ int main(int argc,char *argv[]){
             printf("NO_DISCn");
             
             /* write whatever you want to do */
-            char *bootmikutter = "ruby mikutter";
-            char *checkmikutter = "pgrep -f mikutter";
-            char *killmikutter = "pgrep -f 'mikutter' | xargs kill";
-            if(system(checkmikutter) == 0){
-             system(bootmikutter);
-            }
-            else
-            {
-             system(killmikutter);
-            }
+            char *bootApp = "アプリケーション名";
+            char *checkApp = "pgrep -f 'アプリケーション名'";
+            char *killApp = "pgrep -f 'アプリケーション名' | xargs kill";
+            /* example */
+            // char *bootApp = "ruby mikutter";
+            // char *checkApp = "pgrep -f 'mikutter'";
+            // char *killApp = "pgrep -f 'mikutter' | xargs kill";
             /* example ends here */
+            
+            /* not yet worked */
+            // if(WEXITSTATUS(system(checkApp)) == 0){
+            //  system(bootApp);
+            // }
+            // else
+            // {
+            //  system(killApp);
+            // }
             
             char *eject = "eject";
             printf("uiiiin\n");
